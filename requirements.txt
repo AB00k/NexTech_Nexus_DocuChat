@@ -1,0 +1,7 @@
+pypdf
+PyMuPDF
+PyPDF2
+Pillow
+langchain
+clarifai
+streamlit
