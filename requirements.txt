@@ -1,10 +1,6 @@
 pypdf
-chromadb
-xformers
+PyMuPDF
+PyPDF2
+Pillow
 langchain
-auto-gptq
-transformers
-bitsandbytes
-accelerate
-openai
-lark
+clarifai
