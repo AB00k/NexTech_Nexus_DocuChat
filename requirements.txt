@@ -1,0 +1,10 @@
+pypdf
+chromadb
+xformers
+langchain
+auto-gptq
+transformers
+bitsandbytes
+accelerate
+openai
+lark
