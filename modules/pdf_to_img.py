@@ -47,8 +47,3 @@ def remove_duplicate_dict(list_of_dict):
             unique_dictionaries.append(d)
 
     return unique_dictionaries
-
-# # Example usage
-# pdf_data = {'page': 0, 'source': '/content/data/AbdulBasitResume.pdf'}
-# pil_image = convert_pdf_page_to_pil_image(pdf_data)
-# pil_image

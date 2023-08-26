@@ -1,5 +1,5 @@
-from langchain.embeddings import ClarifaiEmbeddings
 from langchain.llms import Clarifai
+import streamlit as st
 
 # Defining Models
 Models = { 'llama2_70B': { 'USER_ID': 'meta',
@@ -15,16 +15,8 @@ Models = { 'llama2_70B': { 'USER_ID': 'meta',
 
 # Initialize a LLM from Clarifai
 clarifai_llm = Clarifai(
-    pat=CLARIFAI_PAT,
+    pat=st.secrets["CLARIFAI_PAT"],
     user_id=Models['llama2_70B']['USER_ID'],
     app_id=Models['llama2_70B']['APP_ID'],
     model_id=Models['llama2_70B']['MODEL_ID']
-)
-
-# Initialize a Embedding_Model from Clarifai
-clarifai_embedding_model = ClarifaiEmbeddings(
-    pat=CLARIFAI_PAT,
-    user_id=Models['cohere']['USER_ID'],
-    app_id=Models['cohere']['APP_ID'],
-    model_id=Models['cohere']['MODEL_ID']
 )

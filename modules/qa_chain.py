@@ -51,13 +51,3 @@ def create_chain(local_llm, vectordb):
     Question: {question}
     Helpful Answer:'''
     return qa
-
-# chat_history = []
-# query = "when did I started my job at macroinception?"
-# inputs = {
-#             'query': query,
-#             'chat_history': chat_history
-#         }
-# # chat_history.append((query, result['result']))
-
-# result = qa(inputs, return_only_outputs=True)#qa.run(query)

@@ -1,6 +1,7 @@
 from langchain.vectorstores import Clarifai as Clarifai_vectordb
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import PyPDFDirectoryLoader
+import streamlit as st
 
 def create_db(pdfs_folde_path):
 
@@ -13,10 +14,10 @@ def create_db(pdfs_folde_path):
 
 
     vector_db = Clarifai_vectordb.from_documents(
-        user_id='ab00k',
-        app_id='DocuChat',
+        user_id=st.secrets["USER_ID"],
+        app_id=st.secrets["APP_ID"],
         documents=docs,
-        pat=CLARIFAI_PAT,
+        pat=st.secrets["CLARIFAI_PAT"],
         number_of_docs=3,
     )
     return vector_db

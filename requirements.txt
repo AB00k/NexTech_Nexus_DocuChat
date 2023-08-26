@@ -4,3 +4,4 @@ PyPDF2
 Pillow
 langchain
 clarifai
+streamlit
