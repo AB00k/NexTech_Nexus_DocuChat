@@ -7,14 +7,24 @@ def display_chat_content():
     chat_history=[]
     # Initialize the session state for chat messages
     if 'chat_messages' not in st.session_state:
-        st.session_state.chat_messages = []
+        st.session_state.chat_messages = [{"role": "bot", "content": "Hey, how can I help you!", "avatar": "bot.png"}]
 
     col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
         st.image("chat_pic.png", width=200)
 
     avatar = None
-
+    for message in st.session_state.chat_messages:
+        role = message["role"]
+        content = message["content"]
+        if role == "bot":
+            avatar = "bot.png"
+        elif role == "man":
+            avatar = "man.png"
+        elif role == "woman":
+            avatar = "woman.png"
+        with st.chat_message(role, avatar=avatar):
+            st.write(content)
     user_gender = st.session_state.gender
     if user_gender == "Male":
         role = "man"
@@ -36,6 +46,22 @@ def display_chat_content():
 
 
     if st.session_state.get("user_done"):
+        message= st.session_state.chat_messages[-1]
+        role = message["role"]
+        content = message["content"]
+        if role == "bot":
+            avatar = "bot.png"
+            with st.chat_message(role, avatar=avatar):
+                st.markdown(content)
+        elif role == "man":
+            avatar = "man.png"
+            with st.chat_message(role, avatar=avatar):
+                st.markdown(content)
+        elif role == "woman":
+            avatar = "woman.png"
+            with st.chat_message(role, avatar=avatar):
+                st.markdown(content)
+
         result = (st.session_state.get("qa"))(inputs, return_only_outputs=True)
         chat_history.append((user_input, result["result"]))
 
@@ -50,14 +76,11 @@ def display_chat_content():
         st.session_state['user_done']=False
 
     # Display chat messages using Streamlit's built-in chat_message features
-    for message in st.session_state.chat_messages:
+    if (st.session_state.get('chat')==True) and (st.session_state.get('user_done')==False):
+        message= st.session_state.chat_messages[-1]
         role = message["role"]
         content = message["content"]
-        if role == "bot":
-            avatar = "bot.png"
-        elif role == "man":
-            avatar = "man.png"
-        elif role == "woman":
-            avatar = "woman.png"
+       
+        avatar = "bot.png"
         with st.chat_message(role, avatar=avatar):
-            st.write(content)
+                st.markdown(content)
