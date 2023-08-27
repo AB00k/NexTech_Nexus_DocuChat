@@ -1,8 +1,8 @@
 import streamlit as st
-from pages.login import *
-from pages.main import *
-from pages.chat import *
-from pages.evidence import *
+from application.login import *
+from application.main import *
+from application.chat import *
+from application.evidence import *
 
 login()
 
