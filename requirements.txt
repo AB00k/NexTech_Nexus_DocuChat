@@ -6,3 +6,5 @@ langchain
 clarifai
 streamlit
 faiss-cpu
+chromadb
+lark
