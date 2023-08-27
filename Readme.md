@@ -10,10 +10,6 @@
     Your interactive document companion.
     <br/>
     <br/>
-    <a href="https://github.com/AB00k/NexTech_Nexus_DocuChat"><strong>Explore the docs »</strong></a>
-    <br/>
-    <br/>
-    <a href="https://github.com/AB00k/NexTech_Nexus_DocuChat">View Demo</a>
     .
     <a href="https://github.com/AB00k/NexTech_Nexus_DocuChat/issues">Report Bug</a>
     .
