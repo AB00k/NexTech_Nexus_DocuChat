@@ -23,17 +23,6 @@
 
 ![Downloads](https://img.shields.io/github/downloads/AB00k/NexTech_Nexus_DocuChat/total) ![Contributors](https://img.shields.io/github/contributors/AB00k/NexTech_Nexus_DocuChat?color=dark-green) ![Forks](https://img.shields.io/github/forks/AB00k/NexTech_Nexus_DocuChat?style=social) ![License](https://img.shields.io/github/license/AB00k/NexTech_Nexus_DocuChat) 
 
-## Table Of Contents
-
-* [About the Project](#about-the-project)
-* [Built With](#built-with)
-* [Features](#features)
-*[Installation & Setup](#Installation & Setup)
-* [Contributing](#contributing)
-* [License](#license)
-* [Authors](#authors)
-* [Acknowledgements](#acknowledgements)
-
 ## About The Project
 
 ![Screen Shot](https://media.discordapp.net/attachments/1139556965308170283/1145335893079638026/WhatsApp_Image_2023-08-27_at_17.34.20.jpg?width=864&height=402)
@@ -42,14 +31,14 @@ Step into the future of document interaction with DocuChat , an innovative solut
 
 ## Built With
 
--**Streamlit**: is utilized to build the front-end of the application
--**Clarifai**: is employed for handling LLMs (Language Model Models) and embedding models
--**LangChain**: is employed to facilitate the creation of intricate chains and workflows
+* **Streamlit**: is utilized to build the front-end of the application
+* **Clarifai**: is employed for handling LLMs (Language Model Models) and embedding models
+* **LangChain**: is employed to facilitate the creation of intricate chains and workflows
 
 ## Features
 
--**Interactive PDF Conversations**: Upload PDFs, ask questions, and get instant answers. Your documents become interactive companions.
--**Source Transparency**: See the evidence behind each answer. DocuChat reveals the documents used to generate responses, adding credibility to your interactions.
+* **Interactive PDF Conversations**: Upload PDFs, ask questions, and get instant answers. Your documents become interactive companions.
+* **Source Transparency**: See the evidence behind each answer. DocuChat reveals the documents used to generate responses, adding credibility to your interactions.
 
 ### Installation & Setup
 
@@ -97,10 +86,6 @@ We welcome contributions! Please follow the typical Git workflow:
 ## License
 
 This project is licensed under the MIT License. See `LICENSE` for more details (if provided in the repo).
-## Authors
-
-* **Abdul Basit** - *AI Developer* - [Abdul Basit]
-* **Asadullah** - *Comp. Sci Student* [Asadullah]
 
 ## Acknowledgements
 
