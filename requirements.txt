@@ -5,3 +5,4 @@ Pillow
 langchain
 clarifai
 streamlit
+faiss-cpu
