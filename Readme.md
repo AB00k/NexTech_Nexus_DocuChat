@@ -10,7 +10,6 @@
     Your interactive document companion.
     <br/>
     <br/>
-  
     <a href="https://docuchat-by-ntn.streamlit.app/">View Demo</a>
     .
     <a href="https://github.com/AB00k/NexTech_Nexus_DocuChat/issues">Report Bug</a>
