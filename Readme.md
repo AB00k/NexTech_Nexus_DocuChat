@@ -18,7 +18,7 @@
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/downloads/AB00k/NexTech_Nexus_DocuChat/total) ![Contributors](https://img.shields.io/github/contributors/AB00k/NexTech_Nexus_DocuChat?color=dark-green) ![Forks](https://img.shields.io/github/forks/AB00k/NexTech_Nexus_DocuChat?style=social) ![License](https://img.shields.io/github/license/AB00k/NexTech_Nexus_DocuChat) 
+![Contributors](https://img.shields.io/github/contributors/AB00k/NexTech_Nexus_DocuChat?color=dark-green) ![Forks](https://img.shields.io/github/forks/AB00k/NexTech_Nexus_DocuChat?style=social) 
 
 
 
