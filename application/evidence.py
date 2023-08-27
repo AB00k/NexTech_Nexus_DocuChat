@@ -1,5 +1,4 @@
 import streamlit as st
-from PIL import Image
 
 # Function to display evidence in the resizable sidebar
 def show_evidence(img_list):
@@ -47,8 +46,7 @@ def show_evidence(img_list):
         if st.button("Display Evidence"):
             for i, img_path in enumerate(img_list):
                 with st.sidebar:
-                    image = Image.open(img_path)
-                    st.image(image, caption=f"Evidence_{i+1}", use_column_width=True)
+                    st.image(img_path, caption=f"Evidence_{i+1}", use_column_width=True)
             st.session_state["evidence"] = True
         
         if st.button("Log out"):

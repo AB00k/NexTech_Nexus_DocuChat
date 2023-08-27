@@ -26,6 +26,7 @@ def file_upload():
                     # Read the first 4 bytes (file signature)
                     file_signature = file.read(4)
                     file.seek(0)  # Reset the file pointer
+                    p1=True
 
                     # Check if the file signature matches the PDF signature
                     if file_signature == b"%PDF":
@@ -45,7 +46,12 @@ def file_upload():
                 for pdf in valid_pdfs:
                     with open(os.path.join(upload_folder, pdf.name), "wb") as f:
                         f.write(pdf.read())
-            st.session_state["processed"]=True
+                        p3=True
+            try:
+                if p1 and p3:
+                    st.session_state["processed"]=True
+            except:
+                pass
 
         if st.button("Log Out"):
             st.session_state.clear()
@@ -56,8 +62,6 @@ def file_upload():
     st.image("logo.png",width=200)
     st.write("Upload your Pdfs in the sidebar to continue....")
     st.markdown("")
-    st.experimental_rerun()
-
 
 def read_docs():
     with st.spinner("Reading Documents........"):    
@@ -65,3 +69,4 @@ def read_docs():
                 db = create_db("uploads")
                 st.session_state["qa"] = create_chain(clarifai_llm, db)
                 st.session_state["chain_created"] = True
+                st.experimental_rerun()
