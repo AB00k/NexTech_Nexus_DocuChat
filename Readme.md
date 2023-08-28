@@ -66,6 +66,7 @@ Activate the DocuChat Assistant:
 - *Login* Put **admin** as Username and password, select your gender and press login
 - Upload your *Document* 
 - Wait for the processing and you are good to go.
+- Now on the chat page just ask questions from your documents and on the left side you can click on the show evidence button to see the relevent documents to your query.
 
 ### Creating A Pull Request
 
